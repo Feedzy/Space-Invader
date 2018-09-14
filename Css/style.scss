@@ -1,231 +1,52 @@
-body
-{
+body {
   background-image: url("../Images/background-blue.png");
-  animation:90s scroll infinite linear;
-  #acteur{
+  animation: 90s scroll infinite linear;
+  #acteur
+  {
     position: absolute;
     top: 90%;
   }
+  .lo{
+    display: inline-block;
+  }
+  #cadre_ennemie
+  {
+    top: 1%;
+  }
 
-  @keyframes scroll{
-    100%{
-      background-position:0px -3000px;
+  @keyframes scroll {
+    100% {
+      background-position: 0px -3000px;
     }
   }
+}
 
+#enemi
+{
+  position: relative;
+  left: 3%;
+  top: 0;
+}
+#enemie2
+{
+  position: relative;
+  left: 5%;
+  top: 0;
 
-  #image
-  {
-    left:0px;
-    top:0px;
-    position: absolute;
+}
+#enemie3
+{
+  position: relative;
+  left: 7%;
+  top: 0%;
 
-  }
-
-  .image
-  {
-    margin-left: 30px
-  }
-  #bloc1
-  {
-    top:0;
-    left: 0;
-    position: absolute;
-  }
-  #b1-im1
-  {
-    left: 0;
-    position: absolute;
-  }
-  #b1-im2
-  {
-
-    margin-left: 80px;
-    position: absolute;
-  }
-  #b1-im3
-  {
-
-    margin-left: 170px;
-    position: absolute;
-  }
-  #b1-im4
-  {
-
-    margin-left: 250px;
-    position: absolute;
-  }
-  #b1-im5
-  {
-
-    margin-left: 320px;
-    position: absolute;
-  }
-  #b1-im6
-  {
-
-    margin-left: 400px;
-    position: absolute;
-  }
-  #b1-im7
-  {
-
-    margin-left: 470px;
-    position: absolute;
-  }
-  #b1-im8
-  {
-
-    margin-left: 530px;
-    position: absolute;
-  }
-  #b1-im9
-  {
-
-    margin-left: 610px;
-    position: absolute;
-  }
-  #b1-im10
-  {
-
-    margin-left: 700px;
-    position: absolute;
-  }
-
-
-  #bloc2
-  {
-    margin-top: 50px;
-    left: 0;
-    position: absolute;
-  }
-
-  #b2-im1
-  {
-    left: 0;
-    position: absolute;
-  }
-  #b2-im2
-  {
-
-    margin-left: 80px;
-    position: absolute;
-  }
-  #b2-im3
-  {
-
-    margin-left: 170px;
-    position: absolute;
-  }
-  #b2-im4
-  {
-
-    margin-left: 250px;
-    position: absolute;
-  }
-  #b2-im5
-  {
-
-    margin-left: 320px;
-    position: absolute;
-  }
-  #b2-im6
-  {
-
-    margin-left: 400px;
-    position: absolute;
-  }
-  #b2-im7
-  {
-
-    margin-left: 470px;
-    position: absolute;
-  }
-  #b2-im8
-  {
-
-    margin-left: 530px;
-    position: absolute;
-  }
-  #b2-im9
-  {
-
-    margin-left: 610px;
-    position: absolute;
-  }
-  #b2-im10
-  {
-
-    margin-left: 700px;
-    position: absolute;
-  }
-
-  #bloc3{
-
-    margin-top: 100px;
-    left: 0;
-    position: absolute;
-  }
-  #b3-im1
-  {
-    left: 0;
-    position: absolute;
-  }
-  #b3-im2
-  {
-
-    margin-left: 80px;
-    position: absolute;
-  }
-  #b3-im3
-  {
-
-    margin-left: 170px;
-    position: absolute;
-  }
-  #b3-im4
-  {
-
-    margin-left: 250px;
-    position: absolute;
-  }
-  #b3-im5
-  {
-
-    margin-left: 320px;
-    position: absolute;
-  }
-  #b3-im6
-  {
-
-    margin-left: 400px;
-    position: absolute;
-  }
-  #b3-im7
-  {
-
-    margin-left: 470px;
-    position: absolute;
-  }
-  #b3-im8
-  {
-
-    margin-left: 530px;
-    position: absolute;
-  }
-  #b3-im9
-  {
-
-    margin-left: 610px;
-    position: absolute;
-  }
-  #b3-im10
-  {
-
-    margin-left: 700px;
-    position: absolute;
-  }
-
-
-
+}
+.lo{
+  display: inline-block;
+}
+#cadre_ennemie
+{
+  position: absolute;
+  top: 1%;
+  display: inline-block;
 }

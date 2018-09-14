@@ -4,116 +4,34 @@ body {
   body #acteur {
     position: absolute;
     top: 90%; }
+  body .lo {
+    display: inline-block; }
+  body #cadre_ennemie {
+    top: 1%; }
 @keyframes scroll {
   100% {
     background-position: 0px -3000px; } }
-  body #image {
-    left: 0px;
-    top: 0px;
-    position: absolute; }
-  body .image {
-    margin-left: 30px; }
-  body #bloc1 {
-    top: 0;
-    left: 0;
-    position: absolute; }
-  body #b1-im1 {
-    left: 0;
-    position: absolute; }
-  body #b1-im2 {
-    margin-left: 80px;
-    position: absolute; }
-  body #b1-im3 {
-    margin-left: 170px;
-    position: absolute; }
-  body #b1-im4 {
-    margin-left: 250px;
-    position: absolute; }
-  body #b1-im5 {
-    margin-left: 320px;
-    position: absolute; }
-  body #b1-im6 {
-    margin-left: 400px;
-    position: absolute; }
-  body #b1-im7 {
-    margin-left: 470px;
-    position: absolute; }
-  body #b1-im8 {
-    margin-left: 530px;
-    position: absolute; }
-  body #b1-im9 {
-    margin-left: 610px;
-    position: absolute; }
-  body #b1-im10 {
-    margin-left: 700px;
-    position: absolute; }
-  body #bloc2 {
-    margin-top: 50px;
-    left: 0;
-    position: absolute; }
-  body #b2-im1 {
-    left: 0;
-    position: absolute; }
-  body #b2-im2 {
-    margin-left: 80px;
-    position: absolute; }
-  body #b2-im3 {
-    margin-left: 170px;
-    position: absolute; }
-  body #b2-im4 {
-    margin-left: 250px;
-    position: absolute; }
-  body #b2-im5 {
-    margin-left: 320px;
-    position: absolute; }
-  body #b2-im6 {
-    margin-left: 400px;
-    position: absolute; }
-  body #b2-im7 {
-    margin-left: 470px;
-    position: absolute; }
-  body #b2-im8 {
-    margin-left: 530px;
-    position: absolute; }
-  body #b2-im9 {
-    margin-left: 610px;
-    position: absolute; }
-  body #b2-im10 {
-    margin-left: 700px;
-    position: absolute; }
-  body #bloc3 {
-    margin-top: 100px;
-    left: 0;
-    position: absolute; }
-  body #b3-im1 {
-    left: 0;
-    position: absolute; }
-  body #b3-im2 {
-    margin-left: 80px;
-    position: absolute; }
-  body #b3-im3 {
-    margin-left: 170px;
-    position: absolute; }
-  body #b3-im4 {
-    margin-left: 250px;
-    position: absolute; }
-  body #b3-im5 {
-    margin-left: 320px;
-    position: absolute; }
-  body #b3-im6 {
-    margin-left: 400px;
-    position: absolute; }
-  body #b3-im7 {
-    margin-left: 470px;
-    position: absolute; }
-  body #b3-im8 {
-    margin-left: 530px;
-    position: absolute; }
-  body #b3-im9 {
-    margin-left: 610px;
-    position: absolute; }
-  body #b3-im10 {
-    margin-left: 700px;
-    position: absolute; }
+#enemi {
+  position: relative;
+  left: 3%;
+  top: 0; }
+
+#enemie2 {
+  position: relative;
+  left: 5%;
+  top: 0; }
+
+#enemie3 {
+  position: relative;
+  left: 7%;
+  top: 0%; }
+
+.lo {
+  display: inline-block; }
+
+#cadre_ennemie {
+  position: absolute;
+  top: 1%;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

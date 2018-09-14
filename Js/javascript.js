@@ -2,6 +2,59 @@ var body = document.querySelector('body');
 var touche, acteurr = document.getElementById('acteur');
 var droit = 1,haut =90;
 
+var enemi  = document.getElementById('enemi');
+var enemi1= document.getElementById('enemie2');
+var enemi2= document.getElementById('enemie3');
+
+var cadree = document.getElementById('cadre_ennemie');
+var longeur_cadre = parseInt(getComputedStyle(cadree).width);
+
+var position_enemie = parseInt(getComputedStyle(enemi).left);
+var position_enemi1 = parseInt(getComputedStyle(enemi1).left);
+var position_enemi2 = parseInt(getComputedStyle(enemi2).left);
+
+
+var toop_enemie = parseInt(getComputedStyle(cadree).top);
+var declancheur = null, bougee = 3, topss =0;
+
+function deplacement()
+{
+    if(position_enemie <= longeur_cadre )
+    {
+        bougee += 1;
+
+    }
+    enemi.style.left = bougee + 'px';
+    enemi1.style.left = bougee + 'px';
+    enemi2.style.left = bougee + 'px';
+
+    if(bougee == 300)
+    {
+        bougee *= 0;
+        topss += 10;
+    }
+    enemi.style.left = bougee + 'px';
+    enemi1.style.left = bougee + 'px';
+    enemi2.style.left = bougee + 'px';
+    cadree.style.top = topss + '%';
+
+    console.log(topss);
+    if (topss == 100 )
+    {
+        topss=0;
+        cadree.style.top = topss + '%';
+        document.write('<h1>  Game Over </h1>');
+    }
+    /*
+    console.log(' Enemie 1 ======>'+ enemi.style.left);
+    console.log(' Enemie 2 ======>'+ enemi1.style.left);
+    console.log(' Enemie 3 ======>'+ enemi2.style.left);
+  */
+    declancheur = requestAnimationFrame(deplacement);
+}
+
+deplacement();
+
 body.onkeydown= function()
 {
     touche = event.keyCode;
@@ -22,18 +75,6 @@ body.onkeydown= function()
 
             break;
 
-        case 38:
-            haut -= 1;
-            acteurr.style.top = haut +'%';
-            console.log(haut);
-            if (haut == 1)
-            {
-                haut = 90;
-                acteurr.style.top = haut +'%';
-                console.log(haut);
-            }
-            break;
-
         case 39:
             droit += 0.5;
             acteurr.style.left = droit+'%';
@@ -46,18 +87,6 @@ body.onkeydown= function()
                 console.log(droit);
             }
 
-            break;
-
-        case 40:
-            haut += 1;
-            acteurr.style.top = haut +'%';
-            console.log(haut);
-            if (haut == 92)
-            {
-                haut= 0;
-                acteurr.style.top = haut +'%';
-                console.log(haut);
-            }
             break;
 
         case 32:
@@ -73,12 +102,11 @@ body.onkeydown= function()
             balle.style.top = Top ;
             balle.style.left = Left;
             body.appendChild(balle);
-            sons.play();
 
             setInterval(function()
             {
-                      top_moin = top_moin-20;
-                      balle.style.top = top_moin + 'px';
+                  top_moin = top_moin-20;
+                  balle.style.top = top_moin + 'px';
             },0100);
               console.log(top_moin);
           break;
@@ -97,7 +125,6 @@ body.onkeydown= function()
             balle.style.top = Top ;
             balle.style.left = Left;
             body.appendChild(balle);
-            sons.play();
 
             setInterval(function()
             {
@@ -108,37 +135,3 @@ body.onkeydown= function()
     }
 };
 
-var block1 = document.querySelector('#image');
-var player1 = image.animate([
-    {
-        left: "0",
-
-    },
-    {
-        left: "450px",
-
-    }
-], {
-    duration:5000,
-    direction: 'alternate',
-    easing: "linear"
-});
-
-var player2 = image.animate([
-    {
-        left: "0",
-
-    },
-    {
-        left: "450px",
-
-    }
-], {
-    duration:5000,
-    iterations: Infinity,
-    direction: 'alternate',
-    easing: "linear"
-});
-var image1 = document.getElementById('b1-im1');
-var styless = window.getComputedStyle(image1, null).getPropertyValue("left");
-console.log(styless);
